@@ -1,0 +1,62 @@
+<!-- activity_gallery.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pizza"
+    tools:context=".GalleryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ede9fe">
+
+        <!-- Left ImageView (Clickable) -->
+        <ImageView
+            android:id="@+id/imageViewLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:contentDescription="Logo Icon"
+            android:scaleType="fitStart"
+            android:src="@drawable/amigo" />
+
+        <!-- Title TextView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Gallery"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <!-- Right ImageView (Clickable) -->
+        <ImageView
+            android:id="@+id/imageViewRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="Menu Icon"
+            android:scaleType="fitEnd"
+            android:scaleX="1"
+            android:scaleY="0.7"
+            android:src="@drawable/bars" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- GridView for Image Gallery -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:columnWidth="160dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:padding="8dp"
+        android:verticalSpacing="16dp"
+        android:horizontalSpacing="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<!-- res/layout/activity_contact.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contact"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/dialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dial +40 0776666666"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Email to amigopitesti@gmail.com"
+        android:layout_below="@id/dialButton"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageViewLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Logo Icon"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/amigo_logo" />
+
+</RelativeLayout>

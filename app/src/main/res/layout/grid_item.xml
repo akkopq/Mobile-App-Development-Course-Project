@@ -1,0 +1,26 @@
+<!-- grid_item.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/gridImageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/gridTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridImageView"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text=""
+        android:textColor="#6200EA"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+</RelativeLayout>
